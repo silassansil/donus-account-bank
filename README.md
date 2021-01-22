@@ -28,5 +28,5 @@ mvn spring-boot:run
 ```
 To run all Tests you can use Maven, like this:
 ```shell
-mvn tests
+mvn test
 ```
