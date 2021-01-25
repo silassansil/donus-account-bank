@@ -6,7 +6,6 @@ import br.com.donus.donusaccountbank.domain.tiny.Cpf;
 import br.com.donus.donusaccountbank.service.AccountService;
 import br.com.donus.donusaccountbank.web.dto.*;
 import lombok.RequiredArgsConstructor;
-import org.hibernate.validator.constraints.br.CPF;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

@@ -7,7 +7,7 @@ The construction of the project had as main objective to make the most of all th
 
 Thinking about an evolution towards a clean architecture, the responsibilities were divided so that in the future each layer becomes a module, to facilitate implementation DDD concept was used a lot and each chain has its domain while the main domain of the application is shared.
 
-As a structure for caching the data of the created accounts, an LRU cache with its customized capacity was used, it was inserted as a data cache for recently created accounts, and can also be used as a cache of transactions in a possible evolution
+As a structure to cache the data of the created accounts, an LRU cache with its customized capacity was used, it was inserted as a cache for the balance that is previously calculated based on the transactions made by the user.
 
 ## Layers representation
 ![img.png](img.png)

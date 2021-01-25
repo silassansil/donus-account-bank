@@ -1,6 +1,7 @@
 package br.com.donus.donusaccountbank.persistence.impl;
 
 import br.com.donus.donusaccountbank.domain.TransactionWrapper;
+import br.com.donus.donusaccountbank.domain.tiny.BalanceProjection;
 import br.com.donus.donusaccountbank.persistence.TransactionPersistence;
 import br.com.donus.donusaccountbank.persistence.entity.TransactionEntity;
 import br.com.donus.donusaccountbank.persistence.repository.TransactionRepository;
@@ -21,5 +22,10 @@ public class TransactionPersistenceImpl implements TransactionPersistence {
                 .stream()
                 .map(TransactionEntity::fromDomain)
                 .collect(Collectors.toList()));
+    }
+
+    @Override
+    public BalanceProjection calculate(final String cpfOwner) {
+        return this.transactionRepository.calculateCurrentBalance(cpfOwner);
     }
 }
